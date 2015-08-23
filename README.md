@@ -9,4 +9,6 @@ backend.
 Version 2 will be either an Angular JS or Ext JS implementation of the 
 presentation layer.  Much can be learned by doning both.
 
+##Entity Relationship Diagram (ERD)
+This ERD is the foundation for the peopl app:
 <img src="./people.png"/>
