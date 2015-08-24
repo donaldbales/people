@@ -1,7 +1,7 @@
 # setup
 
 ##On Windows
-
+<pre>
 > cd Work
 > mkdir people
 > cd people
@@ -16,3 +16,4 @@
 > rem Your Credentials, http://git-scm.com/docs/gitcredentials
 > git config credential.helper "store"
 
+</pre>
