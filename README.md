@@ -2,7 +2,7 @@
 
 ##Overview
 People is your somewhat typical human resources application (not payroll).  It 
-will be shared by all other applications but herewith.  Version 1 will be your
+will be shared by all other applications herewith.  Version 1 will be your
 basic Ruby on Rails application paried with Bootstrap and PostgreSQL on the
 backend.
 
