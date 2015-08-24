@@ -1,6 +1,7 @@
 # ruby on rails
 
 ## On Windows
+<pre>
 > cd Work\people
 > rails --version
 Rails 4.2.3
@@ -327,7 +328,7 @@ rails generate scaffold position_type code:string description:string active_date
 > rails generate scaffold person first_name:string middle_name:string last_name:string birth_datetime:datetime gender_type_id:integer person_type_id:integer
 > rake db:migrate
 > rem Let's create the HR tables:
-> rails generate scaffold identifier value:string active_datetime:datetime inactive_datetime:datetime
+> rails generate scaffold identifier identifier_type_id:integer value:string active_datetime:datetime inactive_datetime:datetime
 rails generate scaffold industrial_hygiene_job industrial_hygiene_job_type_id:integer parent_id:integer code:string description:string active_datetime:datetime inactive_datetime:datetime level:integer context_id:string context_code:string context_description:string
 rails generate scaffold location location_type_id:integer parent_id:integer code:string description:string active_datetime:datetime inactive_datetime:datetime level:integer context_id:string context_code:string context_description:string
 rails generate scaffold organization organization_type_id:integer parent_id:integer code:string description:string active_datetime:datetime inactive_datetime:datetime level:integer context_id:string context_code:string context_description:string
@@ -350,3 +351,4 @@ rails generate scaffold person_position person_id:integer position_id:integer ac
 
 
 
+</pre>
