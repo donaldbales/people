@@ -7,7 +7,7 @@ basic Ruby on Rails application paried with Bootstrap and PostgreSQL on the
 backend.
 
 Version 2 will be either an Angular JS or Ext JS implementation of the 
-presentation layer.  Much can be learned by doning both.
+presentation layer.  Much can be learned by doing both.
 
 ##Entity Relationship Diagram (ERD)
 This ERD is the foundation for the people app:

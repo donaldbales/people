@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location_type_id: 1
+  parent_id: 1
+  code: MyString
+  description: MyString
+  active_datetime: 2015-08-23 20:11:09
+  inactive_datetime: 2015-08-23 20:11:09
+  level: 1
+  context_id: MyString
+  context_code: MyString
+  context_description: MyString
+
+two:
+  location_type_id: 1
+  parent_id: 1
+  code: MyString
+  description: MyString
+  active_datetime: 2015-08-23 20:11:09
+  inactive_datetime: 2015-08-23 20:11:09
+  level: 1
+  context_id: MyString
+  context_code: MyString
+  context_description: MyString

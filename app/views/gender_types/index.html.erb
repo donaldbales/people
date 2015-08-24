@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gender Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gender_types.each do |gender_type| %>
+      <tr>
+        <td><%= gender_type.code %></td>
+        <td><%= gender_type.description %></td>
+        <td><%= gender_type.active_datetime %></td>
+        <td><%= gender_type.inactive_datetime %></td>
+        <td><%= link_to 'Show', gender_type %></td>
+        <td><%= link_to 'Edit', edit_gender_type_path(gender_type) %></td>
+        <td><%= link_to 'Destroy', gender_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gender type', new_gender_type_path %>

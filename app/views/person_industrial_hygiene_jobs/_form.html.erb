@@ -1,0 +1,33 @@
+<%= form_for(@person_industrial_hygiene_job) do |f| %>
+  <% if @person_industrial_hygiene_job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person_industrial_hygiene_job.errors.count, "error") %> prohibited this person_industrial_hygiene_job from being saved:</h2>
+
+      <ul>
+      <% @person_industrial_hygiene_job.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :industrial_hygiene_job_id %><br>
+    <%= f.number_field :industrial_hygiene_job_id %>
+  </div>
+  <div class="field">
+    <%= f.label :active_datetime %><br>
+    <%= f.datetime_select :active_datetime %>
+  </div>
+  <div class="field">
+    <%= f.label :inactive_datetime %><br>
+    <%= f.datetime_select :inactive_datetime %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

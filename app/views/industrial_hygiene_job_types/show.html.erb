@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @industrial_hygiene_job_type.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @industrial_hygiene_job_type.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @industrial_hygiene_job_type.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @industrial_hygiene_job_type.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_industrial_hygiene_job_type_path(@industrial_hygiene_job_type) %> |
+<%= link_to 'Back', industrial_hygiene_job_types_path %>

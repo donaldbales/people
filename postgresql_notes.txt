@@ -1,0 +1,13 @@
+C:\Users\don\Documents\Work\people>psql -U postgres
+Password for user postgres:
+psql (9.4.4)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# create role don superuser login password 'don';
+CREATE ROLE
+postgres=# create database app_dev with owner don encoding = 'UTF8';
+CREATE DATABASE
+postgres=#

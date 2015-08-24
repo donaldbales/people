@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @gender_type.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gender_type.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @gender_type.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @gender_type.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_gender_type_path(@gender_type) %> |
+<%= link_to 'Back', gender_types_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @person_organization.person_id %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @person_organization.organization_id %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @person_organization.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @person_organization.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_person_organization_path(@person_organization) %> |
+<%= link_to 'Back', person_organizations_path %>

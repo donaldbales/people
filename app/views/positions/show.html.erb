@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Position type:</strong>
+  <%= @position.position_type_id %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @position.parent_id %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @position.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @position.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @position.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @position.inactive_datetime %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @position.level %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @position.context_id %>
+</p>
+
+<p>
+  <strong>Context code:</strong>
+  <%= @position.context_code %>
+</p>
+
+<p>
+  <strong>Context description:</strong>
+  <%= @position.context_description %>
+</p>
+
+<%= link_to 'Edit', edit_position_path(@position) %> |
+<%= link_to 'Back', positions_path %>

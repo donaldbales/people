@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @person_position.person_id %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @person_position.position_id %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @person_position.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @person_position.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_person_position_path(@person_position) %> |
+<%= link_to 'Back', person_positions_path %>

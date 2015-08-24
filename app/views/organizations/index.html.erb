@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Organization type</th>
+      <th>Parent</th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th>Level</th>
+      <th>Context</th>
+      <th>Context code</th>
+      <th>Context description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @organizations.each do |organization| %>
+      <tr>
+        <td><%= organization.organization_type_id %></td>
+        <td><%= organization.parent_id %></td>
+        <td><%= organization.code %></td>
+        <td><%= organization.description %></td>
+        <td><%= organization.active_datetime %></td>
+        <td><%= organization.inactive_datetime %></td>
+        <td><%= organization.level %></td>
+        <td><%= organization.context_id %></td>
+        <td><%= organization.context_code %></td>
+        <td><%= organization.context_description %></td>
+        <td><%= link_to 'Show', organization %></td>
+        <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+        <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organization', new_organization_path %>

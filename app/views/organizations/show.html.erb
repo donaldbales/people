@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Organization type:</strong>
+  <%= @organization.organization_type_id %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @organization.parent_id %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @organization.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @organization.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @organization.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @organization.inactive_datetime %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @organization.level %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @organization.context_id %>
+</p>
+
+<p>
+  <strong>Context code:</strong>
+  <%= @organization.context_code %>
+</p>
+
+<p>
+  <strong>Context description:</strong>
+  <%= @organization.context_description %>
+</p>
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>

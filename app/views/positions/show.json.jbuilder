@@ -1,0 +1,1 @@
+json.extract! @position, :id, :position_type_id, :parent_id, :code, :description, :active_datetime, :inactive_datetime, :level, :context_id, :context_code, :context_description, :created_at, :updated_at

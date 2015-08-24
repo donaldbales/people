@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Person Positions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Position</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @person_positions.each do |person_position| %>
+      <tr>
+        <td><%= person_position.person_id %></td>
+        <td><%= person_position.position_id %></td>
+        <td><%= person_position.active_datetime %></td>
+        <td><%= person_position.inactive_datetime %></td>
+        <td><%= link_to 'Show', person_position %></td>
+        <td><%= link_to 'Edit', edit_person_position_path(person_position) %></td>
+        <td><%= link_to 'Destroy', person_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person position', new_person_position_path %>

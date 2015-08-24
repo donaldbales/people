@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @position_type.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @position_type.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @position_type.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @position_type.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_position_type_path(@position_type) %> |
+<%= link_to 'Back', position_types_path %>

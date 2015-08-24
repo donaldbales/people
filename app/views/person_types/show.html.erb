@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @person_type.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @person_type.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @person_type.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @person_type.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_person_type_path(@person_type) %> |
+<%= link_to 'Back', person_types_path %>

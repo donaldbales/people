@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Person Industrial Hygiene Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Industrial hygiene job</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @person_industrial_hygiene_jobs.each do |person_industrial_hygiene_job| %>
+      <tr>
+        <td><%= person_industrial_hygiene_job.person_id %></td>
+        <td><%= person_industrial_hygiene_job.industrial_hygiene_job_id %></td>
+        <td><%= person_industrial_hygiene_job.active_datetime %></td>
+        <td><%= person_industrial_hygiene_job.inactive_datetime %></td>
+        <td><%= link_to 'Show', person_industrial_hygiene_job %></td>
+        <td><%= link_to 'Edit', edit_person_industrial_hygiene_job_path(person_industrial_hygiene_job) %></td>
+        <td><%= link_to 'Destroy', person_industrial_hygiene_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person industrial hygiene job', new_person_industrial_hygiene_job_path %>

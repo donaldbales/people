@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @person_industrial_hygiene_job.person_id %>
+</p>
+
+<p>
+  <strong>Industrial hygiene job:</strong>
+  <%= @person_industrial_hygiene_job.industrial_hygiene_job_id %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @person_industrial_hygiene_job.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @person_industrial_hygiene_job.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_person_industrial_hygiene_job_path(@person_industrial_hygiene_job) %> |
+<%= link_to 'Back', person_industrial_hygiene_jobs_path %>

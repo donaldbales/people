@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Industrial hygiene job type:</strong>
+  <%= @industrial_hygiene_job.industrial_hygiene_job_type_id %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @industrial_hygiene_job.parent_id %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @industrial_hygiene_job.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @industrial_hygiene_job.description %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @industrial_hygiene_job.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @industrial_hygiene_job.inactive_datetime %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @industrial_hygiene_job.level %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @industrial_hygiene_job.context_id %>
+</p>
+
+<p>
+  <strong>Context code:</strong>
+  <%= @industrial_hygiene_job.context_code %>
+</p>
+
+<p>
+  <strong>Context description:</strong>
+  <%= @industrial_hygiene_job.context_description %>
+</p>
+
+<%= link_to 'Edit', edit_industrial_hygiene_job_path(@industrial_hygiene_job) %> |
+<%= link_to 'Back', industrial_hygiene_jobs_path %>

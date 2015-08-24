@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Identifiers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identifier type</th>
+      <th>Value</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @identifiers.each do |identifier| %>
+      <tr>
+        <td><%= identifier.identifier_type_id %></td>
+        <td><%= identifier.value %></td>
+        <td><%= identifier.active_datetime %></td>
+        <td><%= identifier.inactive_datetime %></td>
+        <td><%= link_to 'Show', identifier %></td>
+        <td><%= link_to 'Edit', edit_identifier_path(identifier) %></td>
+        <td><%= link_to 'Destroy', identifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Identifier', new_identifier_path %>

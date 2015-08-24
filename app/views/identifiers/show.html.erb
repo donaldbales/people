@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Identifier type:</strong>
+  <%= @identifier.identifier_type_id %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @identifier.value %>
+</p>
+
+<p>
+  <strong>Active datetime:</strong>
+  <%= @identifier.active_datetime %>
+</p>
+
+<p>
+  <strong>Inactive datetime:</strong>
+  <%= @identifier.inactive_datetime %>
+</p>
+
+<%= link_to 'Edit', edit_identifier_path(@identifier) %> |
+<%= link_to 'Back', identifiers_path %>

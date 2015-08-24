@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Person Locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Location</th>
+      <th>Active datetime</th>
+      <th>Inactive datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @person_locations.each do |person_location| %>
+      <tr>
+        <td><%= person_location.person_id %></td>
+        <td><%= person_location.location_id %></td>
+        <td><%= person_location.active_datetime %></td>
+        <td><%= person_location.inactive_datetime %></td>
+        <td><%= link_to 'Show', person_location %></td>
+        <td><%= link_to 'Edit', edit_person_location_path(person_location) %></td>
+        <td><%= link_to 'Destroy', person_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person location', new_person_location_path %>

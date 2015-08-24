@@ -1,0 +1,2 @@
+module IndustrialHygieneJobsHelper
+end
