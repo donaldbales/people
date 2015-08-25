@@ -1,6 +1,6 @@
 # ruby on rails
 
-## On Windows
+## Let's Scaffold the App on Windows
 <pre>
 > cd Work\people
 > rails --version
@@ -342,13 +342,27 @@ rails generate scaffold person_organization person_id:integer organization_id:in
 rails generate scaffold person_position person_id:integer position_id:integer active_datetime:datetime inactive_datetime:datetime
 > rake db:migrate
 > Now we need to add FKs. We'll do this using PostgreSQL's psql and a script!
+</pre>
+
+## Let's Fixup the Table active and inactive datetimes
+<pre>
+> psql app_dev don < defaults.sql
+</pre>
+
+## Let's Fixup the Models FKCs
+<pre>
+> rem Edit each model adding belongs_to and has_many
+</pre>
+
+## Let's Fixup the Drop Down Lists
+<pre>
+> rem Edit each model, adding a method for ddlb values
+> rem Edit _form.html.erb adding select
+> rem Edit index.html.erb, show.html.erb: adding code or description
 
 
+</pre>
 
-
-
-
-
-
-
+## Let's Fixup the format of the pages using Bootstrap
+<pre>
 </pre>

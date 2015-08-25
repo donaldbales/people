@@ -29,11 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :gender_type_id %><br>
-    <%= f.number_field :gender_type_id %>
+      <%= f.select :gender_type_id, @person.gender_types.collect { |a| [ a.code, a.id ] }, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :person_type_id %><br>
-    <%= f.number_field :person_type_id %>
+      <%= f.select :person_type_id, @person.person_types.collect { |a| [ a.code, a.id ] }, include_blank: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

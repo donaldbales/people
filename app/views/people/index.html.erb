@@ -22,8 +22,8 @@
         <td><%= person.middle_name %></td>
         <td><%= person.last_name %></td>
         <td><%= person.birth_datetime %></td>
-        <td><%= person.gender_type_id %></td>
-        <td><%= person.person_type_id %></td>
+        <td><%= person.gender_type.code %></td>
+        <td><%= person.person_type.code %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>

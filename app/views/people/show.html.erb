@@ -22,12 +22,12 @@
 
 <p>
   <strong>Gender type:</strong>
-  <%= @person.gender_type_id %>
+  <%= @person.gender_type.code %>
 </p>
 
 <p>
   <strong>Person type:</strong>
-  <%= @person.person_type_id %>
+  <%= @person.person_type.code %>
 </p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
